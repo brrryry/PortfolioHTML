@@ -8,10 +8,14 @@ body {
 }
 
 
+.container-fluid {
+  min-height: 100vh;
+}
+
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -194,7 +198,7 @@ a:hover {
 .projectbox p {
   color: #282a36;
   font-family: "Righteous-Regular", Helvetica;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   left: 37px;
   letter-spacing: 0;
@@ -215,18 +219,19 @@ a:hover {
   line-height: normal;
   position: relative;
   top: 16px;
-  width: 183px;
+  
 }
 
 
 /*About Me Page*/
 .about-container {
-  height: 75vh;
+  min-height: 75vh;
 }
 
 .aboutbox {
   background-color: #bd93f9;
   border-radius: 50px;
+  width: 100%;
   order: 2;
 }
 
@@ -269,9 +274,14 @@ a:hover {
     order: 13;
     display: flex;
   }
+
+  .aboutbox {
+    width: 50%;
+  }
 }
 
 /*Footer*/
+
 .footer {
   color: #bd93f9;
   font-family: "Righteous-Regular", Helvetica;
